@@ -37,10 +37,12 @@ const TodoItemList = (props) => {
   );
 };
 function App() {
+  const [todoItemList, setTodoItemList] = useState([]);
+
   return (
     <div className="App">
       <TodoItemInputField onSubmit={() => {}} />
-      <TodoItemList todoItemList={[]} />
+      <TodoItemList todoItemList={[todoItemList]} />
     </div>
   );
 }
